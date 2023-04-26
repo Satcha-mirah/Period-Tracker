@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main"> 
+        <nav>
+        <h1 class="header">Period Tracker 🤰🏿</h1>
+          <a href="Home.html" class="navlink">Home</a>
+          <a href="Learn.html" class="navlink">Learn</a>
+          <a href="Period Calculator.html" class="navlink">Period Calculator</a>
+          <a href="About us.html" class="navlink">About Us</a>
+        </nav>
+        <img src="./images/second_pink_background.jpg" class="image">
+
+        <div class="learn-more">
+        <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('Menstrual Hygeine')">Menstrual Hygeine</p>
+            <p class="tab-links" onclick="opentab('Menstrual Cycle')">Menstrual Cycle</p>
+            <p class="tab-links" onclick="opentab('Ovulation')">Ovulation</p>
+            <p class="tab-links" onclick="opentab('Safe Periods')">Safe Periods</p>
+        </div>
+
+        <div class="tab-contents active-tab" id="Menstrual Cycle">
+            <p> The menstrual cycle is a term to describe the sequence of events that occur in your body as it prepares for the possibility of pregnancy each month.<br> 
+            This is when you shed the lining of your uterus.<br>
+            This cycle is part of your reproductive system and prepares your body for a possible pregnancy.<br>
+            A typical cycle lasts between 24 and 38 days.
+            Your menstrual cycle is the time from the first day of your menstrual period until the first day of your next menstrual period.<br>
+            Every person’s cycle is slightly different, but the process is the same.
+            Most people have their period (bleed) for between three and seven days.
+        </p>
+        </div>
+
+        <div class="tab-contents active-tab" id="Menstrual Hygeine">
+            <p>Good menstrual health and hygiene practices can prevent infections,<br>
+            reduce odors and help you stay comfortable during your period.<br>
+             You can choose many types of menstrual products to absorb or collect blood during your period,<br>
+            including sanitary pads, tampons, menstrual cups, menstrual discs, and period underwear.</p>
+        </div>
+
+        
+            <div class="tab-contents active-tab" id="Ovulation">
+                <p>Ovulation is a phase in the menstrual cycle when your ovary releases an egg (ovum).<br> 
+                Once an egg leaves your ovary, it travels down your fallopian tube where it waits to be fertilized by sperm.<br>
+                On average, it happens on day 14 of a 28-day menstrual cycle.<br>
+                In an average 28-day menstrual cycle, ovulation occurs about 14 days before the beginning of your next menstrual period.<br>
+                The exact timing varies — your cycle length may be longer or shorter.<br>
+                You may find it helpful to track your menstrual cycle using an app on your phone or a calendar.<br>
+                This can help you determine when ovulation is most likely to occur. <br>
+                Most people will have a period 14 to 16 days after ovulation, regardless of the length of their overall cycle.
+            </p>
+            
+        </div>
+
+        <div class="tab-contents active-tab" id="Safe Periods">
+            <p>It is when supposedly a woman has the least chance of getting pregnant. Women go through monthly changes in their bodies in the name of the menstrual cycle.<br>
+                A monthly cycle has two components:<br>
+                Proliferating Phase: This is the period that begins soon after the menstrual bleeding starts.<br>
+                Secretory Phase: This is a constant period of 14 days, which you can count as 14 days before you get your periods.<br>
+                By no means, it provides complete protection against pregnancy since it has been seen that the intercourse itself may trigger untimely ovulation.<br>
+                You can easily use our safe day's calculator to find out the safe days in your cycle for this month.<br>
+                Safe days can be calculated by counting the number of days of your periods for six months continuously.<br>
+                With the help of the record, count the days of your longest menstrual cycle and subtract 18 days.<br> 
+                Count that number of days from the first day of your last period, and mark it as M.<br>
+                Subtract 10 days from your shortest menstrual cycle, and count that number of days from the first day of your last period and mark it as N.<br>
+                The days between M and N are the most fertile days, and the other days are considered as safe days.
+        </p>
+        
+    </div>
+
+        </div>
+
+
+
+<script>
+var tablinks = document.getElementsByClassName("tab-links")
+   var tabcontents = document.getElementsByClassName("tab-contents")
+   function opentab(tabname){
+     for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+     }
+     for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+     }
+     event.currentTarget.classList.add("active-link");
+     document.getElementById(tabname).classList.add("active-tab");
+   }
+</script>
+                       
+</body>
+</html>

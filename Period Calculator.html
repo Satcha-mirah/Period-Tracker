@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Menstrual Cycle Calendar</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="main"> 
+      <nav>
+      <h1 class="header">Period Tracker 🤰🏿</h1>
+        <a href="Home.html" class="navlink">Home</a>
+        <a href="Period Calculator.html" class="navlink">Period Calculator</a>
+        <a href="About us.html" class="navlink">About Us</a>
+      </nav>
+      <img src="./images/second_pink_background.jpg" class="image">
+    <!-- <marquee direction="left"><h1>Menstrual Cycle Calendar🩸🩸</h1></marquee> -->
+  
+<div class="form-tag">
+    <form>
+      <label for="start-date">Start Date (yyyy-MM-dd): </label>
+      <input type="text" id="start-date" name="start-date" required class="start_date_button">
+      <br><br>
+
+      <label for="cycle-length">Cycle Length (days): </label>
+      <input type="number" id="cycle-length" name="cycle-length" required class="cycle_length_button">
+      <br><br>
+
+      <input type="button" value="Generate Calendar" onclick="generateCalendar()" class="button">
+    </form>
+
+    <br><br>
+
+    <table id="calendar-table">
+      <tr>
+        <th>Flow Date</th>
+        <th>Ovulation Date</th>
+        <th>Safe Period Start Date</th>
+        <th>Safe Period End Date</th>
+      </tr>
+    </table>
+  </div>
+
+    <script src="index.js"> </script>
+      
+      
+   
+</body>
+</html>
